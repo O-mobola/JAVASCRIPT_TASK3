@@ -4,7 +4,7 @@
 function stringReplace (number) {
 
   //declare an empty array and a variable
-    let x, y, z;
+    let x, y, z, a;
     x = "yu";
     y = "gi";
     z = "oh";
@@ -20,19 +20,19 @@ function stringReplace (number) {
     }
     else if(number%3 === 0) {
      count= y;
-     a += count;
+     a = count;
     }
     else if(number%5 === 0) {
      count = z;
-     a += count;
+     a = count;
     }
     else if(number%2 ===0 && number%3 === 0) {
      count= (x+"-"+y);
-     a += count;
+     a = count;
     }
     else if(number%2 ===0 && number%3 === 0 && number%5 === 0) {
       count= (x+"-"+y+"-"+z);
-      a += count;
+      a = count;
     }
     else {
       count[number];
