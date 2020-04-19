@@ -16,7 +16,7 @@ function stringReplace (number) {
     //check conditions
     if(number%2 === 0) {
     count = x;
-    a = count;
+    a += count;
     }
     else if(number%3 === 0) {
      count= y;
