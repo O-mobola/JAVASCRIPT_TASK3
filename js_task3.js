@@ -3,40 +3,40 @@
 
 function stringReplace (number) {
 
-  //declare an empty array and a variable
-    let x, y, z;
+  //declare an empty array and  variables
+    let x, y, z,store;
     x = "yu";
     y = "gi";
     z = "oh";
     let hold = [];
-  //the count in number
+ 
+  //the count in number to initiate the loop
+  for(let count=1; count <= number; count++) {
   
-  for(let count=0; count <= number; count++) {
-    //check conditions
-    if(number%2 === 0) {
-    count = x;
+  //check conditions
+    if(count%2 === 0 && count%3 === 0 && count%5 === 0) {
+     store= (x+"-"+y+"-"+z);
     }
-    else if(number%3 === 0) {
-     count= y;
+    else if(count%2 === 0 && count%3 === 0) {
+     store= (x+"-"+y);
     }
-    else if(number%5 === 0) {
-     count = z;
+    else if(count%2 === 0) {
+     store = x;
     }
-    else if(number%2 ===0 && number%3 === 0) {
-     count= (x+"-"+y);
+    else if(count%3 === 0) {
+     store = y;
     }
-    else if(number%2 ===0 && number%3 === 0 && number%5 === 0) {
-      count= (x+"-"+y+"-"+z);
+    else if(count%5 === 0) {
+      store = z;
     }
     else {
-      count;
+      store = count;
     }
     //push count into array hold
-    hold.push(count);
+    hold.push(store);
   }
-  
   console.log(hold);
-  return hold;
+  //return hold;
 }
 stringReplace(100);
-stringReplace(9);
+stringReplace(30);
